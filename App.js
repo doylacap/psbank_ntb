@@ -14,7 +14,9 @@ import {
   View,
   Text,
   StatusBar,
+  ImageBackground
 } from 'react-native';
+
 
 import {
   Header,
@@ -32,39 +34,18 @@ const App: () => React$Node = () => {
         <ScrollView
           contentInsetAdjustmentBehavior="automatic"
           style={styles.scrollView}>
-          <Header />
+            <ImageBackground
+            accessibilityRole={'image'}
+            source={require('./logo.jpg')}
+            style={styles.background}
+            imageStyle={styles.logo}>
+            </ImageBackground>
           {global.HermesInternal == null ? null : (
             <View style={styles.engine}>
               <Text style={styles.footer}>Engine: Hermes</Text>
             </View>
           )}
           <View style={styles.body}>
-            <View style={styles.sectionContainer}>
-              <Text style={styles.sectionTitle}>Step Ones</Text>
-              <Text style={styles.sectionDescription}>
-                Edit <Text style={styles.highlight}>App.js</Text> to change this
-                screen and then come back to see your edits.
-              </Text>
-            </View>
-            <View style={styles.sectionContainer}>
-              <Text style={styles.sectionTitle}>See Your Changes</Text>
-              <Text style={styles.sectionDescription}>
-                <ReloadInstructions />
-              </Text>
-            </View>
-            <View style={styles.sectionContainer}>
-              <Text style={styles.sectionTitle}>Debug</Text>
-              <Text style={styles.sectionDescription}>
-                <DebugInstructions />
-              </Text>
-            </View>
-            <View style={styles.sectionContainer}>
-              <Text style={styles.sectionTitle}>Learn More</Text>
-              <Text style={styles.sectionDescription}>
-                Read the docs to discover what to do next:
-              </Text>
-            </View>
-            <LearnMoreLinks />
           </View>
         </ScrollView>
       </SafeAreaView>
@@ -74,7 +55,7 @@ const App: () => React$Node = () => {
 
 const styles = StyleSheet.create({
   scrollView: {
-    backgroundColor: Colors.lighter,
+    backgroundColor: Colors.white,
   },
   engine: {
     position: 'absolute',
@@ -108,6 +89,21 @@ const styles = StyleSheet.create({
     padding: 4,
     paddingRight: 12,
     textAlign: 'right',
+  },
+  background: {
+    paddingTop: 120,
+    marginVertical: 100,
+    marginHorizontal:50
+  },
+  logo: {
+    overflow: 'visible',
+    resizeMode: 'cover'
+  },
+  text: {
+    fontSize: 30,
+    fontWeight: '600',
+    textAlign: 'left',
+    color: Colors.white,
   },
 });
 
