@@ -37,7 +37,7 @@ const App: () => React$Node = () => {
           style={styles.scrollView}>
             <ImageBackground
             accessibilityRole={'image'}
-            source={require('./logo.jpg')}
+            source={require('./psbank_logo.jpg')}
             style={styles.background}
             imageStyle={styles.logo}>
             </ImageBackground>
