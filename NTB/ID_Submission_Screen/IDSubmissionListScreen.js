@@ -45,7 +45,7 @@ const IDSubmissionListScreen: () => React$Node = () => {
             data={[
                 {key: 'Philippine Passport'},
                 {key: 'Driver License'},
-                {key: 'Unified Multi-purpose ID (UMID)'},
+                {key: 'Unified Multi-purpose ID (UMIDs)'},
                 {key: 'Firearms License'},
                 {key: 'IBP ID'},
                 {key: 'Seaman Book'},
