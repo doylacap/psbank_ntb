@@ -1,137 +1,70 @@
 /**
- * Sample React Native App
- * https://github.com/facebook/react-native
- *
- * @format
- * @flow
- * bins hello bins
+ * OnBoarding NTB Styles
+ * Vincent Nidea
+ * Nov 19, 2019
  */
 
-import React from 'react';
-import {
-  SafeAreaView,
-  StyleSheet,
-  ScrollView,
-  View,
-  Text,
-  StatusBar,
-  ImageBackground
-} from 'react-native';
+import React, { Component } from 'react';
+import React_Styles from '../../../STYLES/ntb_styles';
+import {View,Image,TouchableOpacity,Text} from 'react-native';
+
+/* Navigation */
+import {createAppContainer} from 'react-navigation';
+import {createStackNavigator} from 'react-navigation-stack';
+
+/* Initial Screen 2 */
+import Open_Account_Welcome from '../OPEN_ACCOUNT_SCREEN/Open_Account_Welcome';
+
+class Initial_Screen_2 extends Component {
+
+  NavigateToInitialScreen_2 = () => {
+   this.props.navigation.navigate('Open_Account_Welcome');
+  }
+  
+ render() {
+   return (
+
+     <View style = {React_Styles.Container}>
+
+        <View style = {React_Styles.Container_New}>
+           <Image
+             style={React_Styles.ResponsiveBox}
+             source={require('../../../assets/images/psbank_logo.jpg')} />
 
 
-import {
-  Header,
-  LearnMoreLinks,
-  Colors,
-  DebugInstructions,
-  ReloadInstructions,
-} from 'react-native/Libraries/NewAppScreen';
+     <View style={{ justifyContent: 'center', textAlign: 'center' }}>
+           <TouchableOpacity style={React_Styles.ButtonContainer} onPress={this.NavigateToInitialScreen_2}>
+           <Text style={React_Styles.ButtonText}>I am new to PSBank
+           </Text>
+           </TouchableOpacity>
+     </View>
+     
 
-const App: () => React$Node = () => {
-  return (
-    <>
-      <StatusBar barStyle="dark-content" />
-      <SafeAreaView>
-        <ScrollView
-          contentInsetAdjustmentBehavior="automatic"
-          style={styles.scrollView}>
-            <ImageBackground
-            accessibilityRole={'image'}
-            source={require('./psbank_logo.jpg')}
-            style={styles.background}
-            imageStyle={styles.logo}>
-            </ImageBackground>
-          {global.HermesInternal == null ? null : (
-            <View style={styles.engine}>
-              <Text style={styles.footer}>Engine: Hermes</Text>
-            </View>
-          )}
-          <View style={styles.body}>
-            <View style={styles.sectionContainer}>
-              <Text style={styles.sectionTitle}>Step Test</Text>
-              <Text style={styles.sectionDescription}>
-                Edit <Text style={styles.highlight}>App.js</Text> to change this
-                screen and then come back to see your edits.
-              </Text>
-            </View>
-            <View style={styles.sectionContainer}>
-              <Text style={styles.sectionTitle}>See Your Changes</Text>
-              <Text style={styles.sectionDescription}>
-                <ReloadInstructions />
-              </Text>
-            </View>
-            <View style={styles.sectionContainer}>
-              <Text style={styles.sectionTitle}>Debug</Text>
-              <Text style={styles.sectionDescription}>
-                <DebugInstructions />
-              </Text>
-            </View>
-            <View style={styles.sectionContainer}>
-              <Text style={styles.sectionTitle}>Learn More</Text>
-              <Text style={styles.sectionDescription}>
-                Read the docs to discover what to do next:
-              </Text>
-            </View>
-            <LearnMoreLinks />
-          </View>
-        </ScrollView>
-      </SafeAreaView>
-    </>
-  );
+     <View style={{ justifyContent: 'center', textAlign: 'center' }}>
+           <TouchableOpacity style={React_Styles.ButtonContainer}>
+           <Text style={React_Styles.ButtonText}>I am an existing PSBank client
+           </Text>
+           </TouchableOpacity>
+     </View>
+     </View>
+
+     <View style={React_Styles.RedLine} />
+
+     </View>
+           
+   );
+   }
 };
 
-const styles = StyleSheet.create({
-  scrollView: {
-    backgroundColor: Colors.white,
+const ONBOARDING_INITIAL_SCREEN = createStackNavigator ({
+  Initial_Screen_2: {
+    screen: Initial_Screen_2, navigationOptions: { header: null }
   },
-  engine: {
-    position: 'absolute',
-    right: 0,
-  },
-  body: {
-    backgroundColor: Colors.white,
-  },
-  sectionContainer: {
-    marginTop: 32,
-    paddingHorizontal: 24,
-  },
-  sectionTitle: {
-    fontSize: 24,
-    fontWeight: '600',
-    color: Colors.black,
-  },
-  sectionDescription: {
-    marginTop: 8,
-    fontSize: 18,
-    fontWeight: '400',
-    color: Colors.dark,
-  },
-  highlight: {
-    fontWeight: '700',
-  },
-  footer: {
-    color: Colors.dark,
-    fontSize: 12,
-    fontWeight: '600',
-    padding: 4,
-    paddingRight: 12,
-    textAlign: 'right',
-  },
-  background: {
-    paddingTop: 120,
-    marginVertical: 100,
-    marginHorizontal:50
-  },
-  logo: {
-    overflow: 'visible',
-    resizeMode: 'cover'
-  },
-  text: {
-    fontSize: 30,
-    fontWeight: '600',
-    textAlign: 'left',
-    color: Colors.white,
+  Open_Account_Welcome: {
+    screen: Open_Account_Welcome , navigationOptions: { header: null }
   },
 });
 
-export default App;
+const ON_BOARDING = createAppContainer(ONBOARDING_INITIAL_SCREEN);
+
+export default ON_BOARDING;
