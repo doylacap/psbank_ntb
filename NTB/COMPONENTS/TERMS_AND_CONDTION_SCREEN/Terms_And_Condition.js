@@ -1,33 +1,25 @@
-import React from 'react';
-import {
-  SafeAreaView,
-  StyleSheet,
-  ScrollView,
-  View,
-  Text,
-  StatusBar,
-  ImageBackground,
-  Button,
-  Switch,
-  TouchableOpacity
-} from 'react-native';
+/**
+ * Terms and Condition
+ * John Oliver N. Lacap
+ * Nov 20, 2019
+ */
 
+import React, { Component } from 'react';
+import React_Styles from '../../../STYLES/ntb_styles';
+import {View,Image,TouchableOpacity,Text,ImageBackground, SafeAreaView, Switch, ScrollView} from 'react-native';
+import {widthPercentageToDP as wp, heightPercentageToDP as hp} from 'react-native-responsive-screen';
+import { Header } from 'react-native/Libraries/NewAppScreen';
 
-import {
-  Header,
-  LearnMoreLinks,
-  Colors,
-  DebugInstructions,
-  ReloadInstructions,
-} from 'react-native/Libraries/NewAppScreen';
+/* Navigation */
+import {createAppContainer} from 'react-navigation';
+import {createStackNavigator} from 'react-navigation-stack';
 
 import Modal from "react-native-modal";
 
-const TermsAndCondition: () => React$Node = () => {
+const Terms_And_Condition: () => React$Node = () => {
     return (
       <>
-        <StatusBar barStyle="dark-content" />
-        <SafeAreaView>
+        <SafeAreaView style = {React_Styles.Open_Account_Container}>
         <Modal isVisible={false} style={styles.modal} animationIn="slideInUp">
           <View>
           <Text style={styles.modalTitle}>Important Reminder</Text>
@@ -41,7 +33,7 @@ const TermsAndCondition: () => React$Node = () => {
           </TouchableOpacity>
           </View>
         </Modal>
-        <Header/> 
+        <Header></Header>
         <View style={styles.sendEmail}>
            <Switch value={true}></Switch>
         </View>  
@@ -66,102 +58,4 @@ const TermsAndCondition: () => React$Node = () => {
     );
   };
 
-  const styles = StyleSheet.create({
-    scrollView: {
-      backgroundColor: Colors.white,
-    },
-    engine: {
-      position: 'absolute',
-      right: 0,
-    },
-    body: {
-      backgroundColor: Colors.white,
-    },
-    sectionContainer: {
-      marginTop: 32,
-      paddingHorizontal: 24,
-    },
-    sectionTitle: {
-      fontSize: 24,
-      fontWeight: '600',
-      color: Colors.black,
-    },
-    sectionDescription: {
-      marginTop: 8,
-      fontSize: 18,
-      color: Colors.dark,
-      textAlign: "justify"
-    },
-    highlight: {
-      fontWeight: '700',
-    },
-    footer: {
-      color: Colors.dark,
-      fontSize: 12,
-      fontWeight: '600',
-      padding: 4,
-      paddingRight: 12,
-      textAlign: 'right',
-    },
-    background: {
-      paddingTop: 120,
-      marginVertical: 100,
-      marginHorizontal:50
-    },
-    logo: {
-      overflow: 'visible',
-      resizeMode: 'cover'
-    },
-    text: {
-      fontSize: 30,
-      fontWeight: '600',
-      textAlign: 'left',
-      color: Colors.white,
-    },
-    modal: {
-        backgroundColor: Colors.white,
-        marginVertical:300,
-        borderRadius:25,
-        paddingHorizontal:20
-    },
-    modalTitle: {
-        fontSize: 28,
-        fontWeight: '600',
-        color: '#EE3031',
-        paddingBottom:10,
-        textAlign: "center"
-      },
-      modalContent: {
-        fontSize: 16,
-        paddingVertical:10
-      },
-    sendEmail: {
-        backgroundColor: '#E0E1E1',
-        paddingVertical:10,
-        alignItems: "flex-end",
-        paddingHorizontal:10
-    },
-    horizontalLine: {
-        borderBottomColor: 'black',
-        borderBottomWidth: 1,
-    },
-    button:{
-        marginRight:30,
-        marginLeft:30,
-        marginTop:10,
-        paddingTop:10,
-        paddingBottom:10,
-        backgroundColor:'#0055A5',
-        borderRadius:50,
-        borderWidth: 1,
-        borderColor: '#fff'
-      },
-      buttonText:{
-          color:'#fff',
-          textAlign:'center',
-          paddingLeft : 10,
-          paddingRight : 10
-      } 
-  });
-
-  export default TermsAndCondition;
+  export default Terms_And_Condition;
