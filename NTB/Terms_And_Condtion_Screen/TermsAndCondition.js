@@ -8,7 +8,8 @@ import {
   StatusBar,
   ImageBackground,
   Button,
-  Switch
+  Switch,
+  TouchableOpacity
 } from 'react-native';
 
 
@@ -30,14 +31,19 @@ const TermsAndCondition: () => React$Node = () => {
         <Modal isVisible={false} style={styles.modal} animationIn="slideInUp">
           <View>
           <Text style={styles.modalTitle}>Important Reminder</Text>
+          <View style={styles.horizontalLine}></View>
           <Text style={styles.modalContent}>Before you proceed, please be reminded that the Online Account Opening facility is currently limited to Filipino citizen of legal age</Text>
           <Text style={styles.modalContent}s>Continue your Online Account Opening?</Text>
+          <TouchableOpacity style={styles.button}>
+          <Text style={styles.buttonText}>Yes, I am a Filipino Citizen</Text></TouchableOpacity>
+          <TouchableOpacity style={styles.button}>
+          <Text style={styles.buttonText}>No, I am not a Filipino Citizen</Text>
+          </TouchableOpacity>
           </View>
         </Modal>
         <Header/> 
         <View style={styles.sendEmail}>
-            <Text>Send a copy to my email <Switch value={true}></Switch>
-            </Text>
+           <Switch value={true}></Switch>
         </View>  
           <ScrollView
             contentInsetAdjustmentBehavior="automatic"
@@ -119,22 +125,43 @@ const TermsAndCondition: () => React$Node = () => {
         paddingHorizontal:20
     },
     modalTitle: {
-        fontSize: 24,
+        fontSize: 28,
         fontWeight: '600',
         color: '#EE3031',
-        paddingBottom:20,
+        paddingBottom:10,
         textAlign: "center"
       },
       modalContent: {
         fontSize: 16,
-        paddingBottom:10
+        paddingVertical:10
       },
     sendEmail: {
         backgroundColor: '#E0E1E1',
-        paddingVertical:20,
+        paddingVertical:10,
         alignItems: "flex-end",
         paddingHorizontal:10
-    } 
+    },
+    horizontalLine: {
+        borderBottomColor: 'black',
+        borderBottomWidth: 1,
+    },
+    button:{
+        marginRight:30,
+        marginLeft:30,
+        marginTop:10,
+        paddingTop:10,
+        paddingBottom:10,
+        backgroundColor:'#0055A5',
+        borderRadius:50,
+        borderWidth: 1,
+        borderColor: '#fff'
+      },
+      buttonText:{
+          color:'#fff',
+          textAlign:'center',
+          paddingLeft : 10,
+          paddingRight : 10
+      } 
   });
 
   export default TermsAndCondition;
