@@ -17,16 +17,69 @@ import {createStackNavigator} from 'react-navigation-stack';
 import Modal from "react-native-modal";
 
 const ID_Submission_List_Screen: () => React$Node = () => {
+  state = {
+    names: [
+       {
+          id: 0,
+          name: 'Philippine Passport',
+       },
+       {
+          id: 1,
+          name: 'Driver License',
+       },
+       {
+          id: 2,
+          name: 'UMID',
+       },
+       {
+          id: 3,
+          name: 'Firearms License',
+       },
+       {
+          id: 4,
+          name: 'Company ID',
+       },
+       {
+          id: 5,
+          name: 'School ID',
+       },
+       {
+          id: 6,
+          name: 'PRC',
+       }
+    ]
+ }
     return (
       <View>
-      <Header></Header>
-
-        <ScrollView
+      <Header subHeader='ID Submission'></Header>
+      <View>
+        <ImageBackground style={React_Styles.ID_Submission_List_Breadcrumbs} source={require('../ID_SUBMISSION_LIST_SCREEN/bread_id.png')}>
+        </ImageBackground>
+      </View>
+        <View
           contentInsetAdjustmentBehavior="automatic">
           <View style={React_Styles.Container}>
             <Text style={React_Styles.Container_Title_Gray}>Submit a photo of your valid ID</Text>
+            <View style={React_Styles.ID_Submission_List_Container}>
+            <Text style={React_Styles.ID_Submission_List_Container_Title}>Choose a valid ID</Text>
+            {
+               this.state.names.map((item, index) => (
+                  <TouchableOpacity
+                     key = {item.id}
+                     style = {React_Styles.ID_Submission_List_Items}
+                    >
+                     <Text style = {React_Styles.ID_Submission_List_Text}>
+                        {item.name}
+                     </Text>
+                     <Text style = {React_Styles.ID_Submission_List_Text}>
+                        >
+                     </Text>
+                  </TouchableOpacity>
+               ))
+            }
+         </View>
           </View>
-        </ScrollView>
+        </View>
       </View>
     );
   };
