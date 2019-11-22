@@ -83,7 +83,8 @@ export default styles = StyleSheet.create({
       ImageBgTop: {
         width: wp('100%'),
         height: hp ('22%'),
-        resizeMode: 'cover'
+        resizeMode: 'cover',
+        borderBottomColor: ntb_red
       },
 
       ButtonTextBlack: {

@@ -82,8 +82,6 @@ export default class Open_Account_Welcome extends Component {
               </View>
               </View>
 
-        
-              
         </View>
         
         
