@@ -6,7 +6,7 @@
 
 import React, { Component } from 'react';
 import React_Styles from '../../../STYLES/ntb_styles';
-import {View,Image,TouchableOpacity,Text,ImageBackground, SafeAreaView, Switch, ScrollView} from 'react-native';
+import {View,Image,TouchableOpacity,Text,ImageBackground } from 'react-native';
 import {widthPercentageToDP as wp, heightPercentageToDP as hp} from 'react-native-responsive-screen';
 import { Header } from 'react-native/Libraries/NewAppScreen';
 
@@ -58,6 +58,14 @@ const ID_Submission_Note_Screen: () => React$Node = () => {
             contentInsetAdjustmentBehavior="automatic">
             <View style={React_Styles.Container}>
               <Text style={React_Styles.Container_Title_Gray}>Please take note of the following</Text>
+              <View>
+                  <Text style={React_Styles.ID_Submission_Note_Text}>Make sure you're in a well lit area</Text>
+                  <Text style={React_Styles.ID_Submission_Note_Text}>Turn off your camera flash</Text>
+                  <Text style={React_Styles.ID_Submission_Note_Text}>Make sure ID surface has no glare</Text>
+                  <TouchableOpacity style={React_Styles.ButtonContainer}>
+                     <Text style={React_Styles.ButtonText}>Yes, I am a Filipino Citizen</Text>
+                  </TouchableOpacity>
+              </View>
             </View>
           </View>
         </View>

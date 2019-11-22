@@ -68,7 +68,6 @@ export default styles = StyleSheet.create({
       },
 
       ButtonContainer: {
-        width: wp('80%'), 
         height: hp('5.5%'),
         borderRadius: 15,
         marginTop: hp('4%'),
@@ -245,12 +244,18 @@ export default styles = StyleSheet.create({
         display: 'flex',
         flexDirection: 'row',
         justifyContent: 'space-between'
-
       },
       ID_Submission_List_Text: {
         color: '#4f603c',
         fontSize: wp('3.5%'),
         fontFamily: 'Avenir'
+      },
+      ID_Submission_Note_Text: {
+        color: '#4f603c',
+        fontSize: wp('3.5%'),
+        fontFamily: 'Avenir',
+        marginTop: hp('1%'),
+        marginLeft: wp('3%')
       }
 
   });
