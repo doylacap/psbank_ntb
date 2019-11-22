@@ -24,7 +24,7 @@ class Initial_Screen_2 extends Component {
  render() {
    return (
 
-     <View style = {React_Styles.Container}>
+     <View style = {React_Styles.container_bins_bins}>
 
         <View style = {React_Styles.Container_New}>
            <Image

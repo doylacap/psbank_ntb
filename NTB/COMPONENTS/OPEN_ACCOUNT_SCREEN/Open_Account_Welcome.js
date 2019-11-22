@@ -6,6 +6,7 @@
 
 import React, { Component } from 'react';
 import React_Styles from '../../../STYLES/ntb_styles';
+import { Header } from 'react-native/Libraries/NewAppScreen';
 import {View,Image,TouchableOpacity,Text,ImageBackground} from 'react-native';
 import {widthPercentageToDP as wp, heightPercentageToDP as hp} from 'react-native-responsive-screen';
 
@@ -25,14 +26,7 @@ export default class Open_Account_Welcome extends Component {
 
      <View style = {React_Styles.Open_Account_Container}>
 
-        <ImageBackground
-          style={React_Styles.ImageBgTop} source={require('../../../assets/images/open_account.jpg')}>
-          <View style={{ flex: 1, flexDirection: 'column', backgroundColor: 'transparent' }}>
-            <View style={{ backgroundColor: 'transparent', position: 'absolute', bottom: hp('3%'), left: wp('3.2%')  }}>
-              <Text style={React_Styles.ButtonTextBlack}>Open an Account</Text></View>
-            </View>
-        </ImageBackground>
-              <View style={{borderBottomColor: 'red',borderBottomWidth: hp('1.7%'),marginBottom: 10}}/>
+          <Header subHeader='Terms and Conditions'></Header>
           <View>
 
 

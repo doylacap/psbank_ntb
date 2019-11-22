@@ -25,6 +25,12 @@ ntb_myriad_regular = 'myriad_pro_regular.ttf';
 
 
 export default styles = StyleSheet.create({
+  container_bins_bins: {
+    flex: 1,
+    justifyContent: 'flex-start', 
+    backgroundColor: 'transparent'
+  },
+  
       Container: {
         justifyContent: 'center',
         fontFamily: 'Avenir',
