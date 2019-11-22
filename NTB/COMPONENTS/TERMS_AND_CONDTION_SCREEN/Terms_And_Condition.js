@@ -20,7 +20,7 @@ const Terms_And_Condition: () => React$Node = () => {
     return (
       <>
         <View style = {React_Styles.Open_Account_Container}>
-        <Modal isVisible={false} animationIn="slideInUp">
+        <Modal isVisible={true} animationIn="slideInUp">
           <View style={React_Styles.Modal_Container}>
           <Text style={React_Styles.Text_Red_Modal_Title}>Important Reminder</Text>
           <View style={React_Styles.Modal_Title_Horizontal_Line}></View>
@@ -35,7 +35,7 @@ const Terms_And_Condition: () => React$Node = () => {
           </View>
           </View>
         </Modal>
-        <Header></Header>
+        <Header subHeader='Terms and Conditions'></Header>
         <View style={React_Styles.Terms_And_Condition_Send_Email_Container}>
            <Switch value={true}></Switch>
            <Text style={React_Styles.Terms_And_Condition_Send_Email_Text}>Send a copy to my email</Text>

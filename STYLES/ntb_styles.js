@@ -46,7 +46,7 @@ export default styles = StyleSheet.create({
       Container_Title_Gray: {
         fontFamily: 'Avenir',
         marginVertical:hp('1%'),
-        fontSize: wp('5%'),
+        fontSize: wp('4%'),
         fontWeight:'bold',
         color:'#999999'
       },
@@ -109,6 +109,12 @@ export default styles = StyleSheet.create({
         alignSelf: 'center',
         fontWeight: 'bold',
         fontFamily: 'Avenir'
+      },
+      Header_Subtitle:{
+        color: ntb_white,
+        fontSize: wp('4%'),
+        fontFamily: 'Avenir',
+        marginTop: hp('0.3%')
       },
       ImageBgTop: {
         width: wp('100%'),
@@ -213,6 +219,38 @@ export default styles = StyleSheet.create({
         fontFamily: 'Avenir',
         fontSize: wp('3.5%'),
         paddingHorizontal: wp('2%'),
+      },
+      ID_Submission_List_Breadcrumbs: {
+        width: wp('100%'),
+        height: hp ('9.5%'),
+        resizeMode: 'cover',
+      },
+      ID_Submission_List_Container: {
+        borderColor: ntb_light_gray,
+        borderWidth:1,
+        borderRadius: 5,
+        paddingHorizontal: wp('6%'),
+        paddingVertical: hp('3%'),
+      },
+      ID_Submission_List_Container_Title: {
+        fontSize: wp('3.9%'),
+        color : ntb_blue,
+        fontWeight: 'bold',
+        fontFamily: 'Avenir'
+      },
+      ID_Submission_List_Items: {
+        paddingVertical: 15,
+        borderBottomWidth: 1,
+        borderBottomColor: ntb_light_gray,
+        display: 'flex',
+        flexDirection: 'row',
+        justifyContent: 'space-between'
+
+      },
+      ID_Submission_List_Text: {
+        color: '#4f603c',
+        fontSize: wp('3.5%'),
+        fontFamily: 'Avenir'
       }
 
   });
