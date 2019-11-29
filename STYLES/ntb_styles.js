@@ -250,12 +250,53 @@ export default styles = StyleSheet.create({
         fontSize: wp('3.5%'),
         fontFamily: 'Avenir'
       },
+      ID_Submission_Note_Container: {
+        display: 'flex',
+        flexDirection: 'column'
+      },
       ID_Submission_Note_Text: {
         color: '#4f603c',
         fontSize: wp('3.5%'),
         fontFamily: 'Avenir',
         marginTop: hp('1%'),
         marginLeft: wp('3%')
+      },
+      Summary_List_Items: {
+        display: 'flex',
+        flexDirection: 'row',
+        alignItems: 'center',
+        backgroundColor: 'white',
+        height: hp('10%'),
+        paddingHorizontal:wp('4.7%'),
+      },
+      Summary_List_Items_Combination: {
+        display: 'flex',
+        flexDirection: 'row',
+        alignItems: 'center',
+        backgroundColor: 'white',
+      },
+      Summary_List_Items_Field_Name: {
+        display: 'flex',
+        flexDirection: 'row',
+        paddingVertical: hp('3%'),
+        paddingRight:wp('4%'),
+        borderRightWidth: 1,
+      },
+      Summary_List_Items_Field: {
+        display: 'flex',
+        flexDirection: 'row',
+        paddingVertical: hp('3%'),
+        paddingLeft:wp('4%'),
+      },
+      Summary_List_Items_Caret: {
+        display: 'flex',
+        flexDirection: 'row',
+        paddingVertical: hp('3%'),
+      
+      },
+      Summary_List_Items_Edit: {
+        backgroundColor:'red'
       }
 
+      
   });

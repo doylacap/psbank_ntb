@@ -58,12 +58,12 @@ const ID_Submission_Note_Screen: () => React$Node = () => {
             contentInsetAdjustmentBehavior="automatic">
             <View style={React_Styles.Container}>
               <Text style={React_Styles.Container_Title_Gray}>Please take note of the following</Text>
-              <View>
+              <View style={React_Styles.ID_Submission_Note_Container}>
                   <Text style={React_Styles.ID_Submission_Note_Text}>Make sure you're in a well lit area</Text>
                   <Text style={React_Styles.ID_Submission_Note_Text}>Turn off your camera flash</Text>
                   <Text style={React_Styles.ID_Submission_Note_Text}>Make sure ID surface has no glare</Text>
                   <TouchableOpacity style={React_Styles.ButtonContainer}>
-                     <Text style={React_Styles.ButtonText}>Yes, I am a Filipino Citizen</Text>
+                     <Text style={React_Styles.ButtonText}>Take a photo</Text>
                   </TouchableOpacity>
               </View>
             </View>
