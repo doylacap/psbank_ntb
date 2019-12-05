@@ -17,14 +17,14 @@ import Open_Account_Welcome from '../OPEN_ACCOUNT_SCREEN/Open_Account_Welcome';
 
 class Initial_Screen_2 extends Component {
 
-  NavigateToInitialScreen_2 = () => {
+  NavigateToOpenAccountWelcome = () => {
    this.props.navigation.navigate('Open_Account_Welcome');
   }
   
  render() {
    return (
 
-     <View style = {React_Styles.container_bins_bins}>
+     <View style = {React_Styles.container_bins_bins}> 
 
         <View style = {React_Styles.Container_New}>
            <Image
@@ -33,12 +33,11 @@ class Initial_Screen_2 extends Component {
 
 
      <View style={{ justifyContent: 'center', textAlign: 'center' }}>
-           <TouchableOpacity style={React_Styles.ButtonContainer} onPress={this.NavigateToInitialScreen_2}>
+           <TouchableOpacity style={React_Styles.ButtonContainer} onPress={this.NavigateToOpenAccountWelcome}>
            <Text style={React_Styles.ButtonText}>I am new to PSBank
            </Text>
            </TouchableOpacity>
      </View>
-     
 
      <View style={{ justifyContent: 'center', textAlign: 'center' }}>
            <TouchableOpacity style={React_Styles.ButtonContainer}>
@@ -61,7 +60,7 @@ const ONBOARDING_INITIAL_SCREEN = createStackNavigator ({
     screen: Initial_Screen_2, navigationOptions: { header: null }
   },
   Open_Account_Welcome: {
-    screen: Open_Account_Welcome , navigationOptions: { header: null }
+    screen: Open_Account_Welcome, navigationOptions: { header: null }
   },
 });
 

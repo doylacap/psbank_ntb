@@ -13,7 +13,7 @@ import {createAppContainer} from 'react-navigation';
 import {createStackNavigator} from 'react-navigation-stack';
 
 /* Initial Screen 2 */
-import Initial_Screen_2 from '../INITIAL_SCREEN/Initial_Screen_2'
+import Initial_Screen_2 from '../INITIAL_SCREEN/Initial_Screen_2';
 
 class Initial_Screen_1 extends Component {
 

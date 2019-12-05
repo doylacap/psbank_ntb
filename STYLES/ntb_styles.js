@@ -4,7 +4,7 @@
  * Nov 19, 2019
  */
 
-import {StyleSheet,} from 'react-native';
+import {StyleSheet} from 'react-native';
 import {widthPercentageToDP as wp, heightPercentageToDP as hp}
 from 'react-native-responsive-screen';
 
@@ -25,12 +25,19 @@ ntb_myriad_regular = 'myriad_pro_regular.ttf';
 
 
 export default styles = StyleSheet.create({
+  container_new_bins:{
+    flex: 1,
+    justifyContent: 'flex-start',
+    marginLeft: wp('2%'),
+    marginRight: wp('2%'),
+    bottom: hp('1%'),
+    
+  },
   container_bins_bins: {
     flex: 1,
     justifyContent: 'flex-start', 
     backgroundColor: 'transparent'
   },
-  
       Container: {
         justifyContent: 'center',
         fontFamily: 'Avenir',
@@ -56,6 +63,13 @@ export default styles = StyleSheet.create({
         fontWeight:'bold',
         color:'#999999'
       },
+      Container_Title_Gray_Personal: {
+        fontFamily: 'Avenir',
+        justifyContent: 'flex-start',
+        fontSize: wp('3.8%'),
+        fontWeight:'bold',
+        color:'#999999'
+      },
       Container_New: {
         flex: 1, 
         bottom: hp('10%'),
@@ -68,14 +82,14 @@ export default styles = StyleSheet.create({
       ResponsiveBox: {
         bottom: hp('5%'),
         width: wp('90%'), 
-        height: hp('20%'),
+        height: hp('25%'),
         justifyContent: 'center',
         flexDirection: 'column'
       },
 
       ButtonContainer: {
-        width: wp('80%'), 
-        height: hp('5.5%'),
+        width: wp('75%'), 
+        height: hp('6%'),
         borderRadius: 15,
         marginTop: hp('4%'),
         backgroundColor: ntb_blue,

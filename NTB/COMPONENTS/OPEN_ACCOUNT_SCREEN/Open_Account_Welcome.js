@@ -14,11 +14,13 @@ import {widthPercentageToDP as wp, heightPercentageToDP as hp} from 'react-nativ
 import {createAppContainer} from 'react-navigation';
 import {createStackNavigator} from 'react-navigation-stack';
 
+import Open_Account_Terms from '../TERMS_AND_CONDTION_SCREEN/Terms_And_Condition';
 
-export default class Open_Account_Welcome extends Component {
 
-  NavigateToOpenAccountWelcome = () => {
-   this.props.navigation.navigate('OpenAccountWelcome');
+class Open_Account_Welcome extends Component {
+
+  NavigateToOpenAccountTerms = () => {
+   this.props.navigation.navigate('Open_Account_Terms');
   }
 
  render() {
@@ -26,7 +28,7 @@ export default class Open_Account_Welcome extends Component {
 
      <View style = {React_Styles.Open_Account_Container}>
 
-          <Header subHeader='Terms and Conditions'></Header>
+          <Header ></Header>
           <View>
 
 
@@ -49,7 +51,7 @@ export default class Open_Account_Welcome extends Component {
 
                    <Text style={React_Styles.Text_Black}>{"Simply fill out the Online Account Opening form."}</Text>
 
-              <View style={{ backgroundColor: 'transparent', top: hp('4%') }}>
+              <View style={{ backgroundColor: 'transparent', top: hp('3%') }}>
 
                    <Text style={React_Styles.Text_Black}>{"For more information, please contact our customer experience hotline at "}
                    <Text style={React_Styles.Text_Blue}>{"(02) 8845-8888"}</Text>
@@ -65,7 +67,7 @@ export default class Open_Account_Welcome extends Component {
 
               <View style={{ backgroundColor: 'transparent', top: hp('8%') ,alignItems: 'center'}}>
 
-                  <TouchableOpacity style={React_Styles.ButtonContainer}>
+                  <TouchableOpacity style={React_Styles.ButtonContainer} onPress={this.NavigateToOpenAccountTerms}>
                   <Text style={React_Styles.ButtonText}>Proceed</Text>
                   </TouchableOpacity>
 
@@ -87,3 +89,16 @@ export default class Open_Account_Welcome extends Component {
    );
    }
 };
+
+const ONBOARDING_INITIAL_SCREEN = createStackNavigator ({
+  Open_Account_Welcome: {
+    screen: Open_Account_Welcome, navigationOptions: { header: null }
+  },
+  Open_Account_Terms: {
+    screen: Open_Account_Terms, navigationOptions: { header: null }
+  },
+});
+
+const ON_BOARDING = createAppContainer(ONBOARDING_INITIAL_SCREEN);
+
+export default ON_BOARDING;
