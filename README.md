@@ -1,5 +1,5 @@
 # PSB On-Boarding for New Customers
-## Pushing to master branch
+### Pushing to master branch
 
 Execute the commands to push changes from your branch to master branch
 ```bash
