@@ -64,11 +64,13 @@ export default styles = StyleSheet.create({
         color:'#999999'
       },
       Container_Title_Gray_Personal: {
+        
         fontFamily: 'Avenir',
         justifyContent: 'flex-start',
-        fontSize: wp('3.8%'),
+        fontSize: wp('4%'),
         fontWeight:'bold',
-        color:'#999999'
+        color:ntb_gray,
+        marginTop: hp('1%')
       },
       Container_New: {
         flex: 1, 
