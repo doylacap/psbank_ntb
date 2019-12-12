@@ -18,7 +18,6 @@ import {
   Platform,
   TextInput
 } from 'react-native';
-import { RaisedTextButton } from 'react-native-material-buttons';
 import { TextField } from 'react-native-material-textfield';
 
 /* Navigation */
@@ -80,8 +79,6 @@ export default class Personal_Info_Screen extends Component{
         </ImageBackground>
       </View>
      
-
-      
       <ScrollView style={{paddingLeft:wp('1.5%'), paddingRight:wp('1.5%'), paddingTop:wp('2%')}}
             contentInsetAdjustmentBehavior="automatic"
             horizontal={false}>
@@ -203,11 +200,8 @@ export default class Personal_Info_Screen extends Component{
                 tintColor ={ntb_blue}
               />
             </View>
-          
-
-           
             
-            <Text style={React_Styles.Container_Title_Gray_Personal}>{"This is also my "}</Text>
+            <Text style={React_Styles.Container_Title_Gray_Personal}>{"This is also my mailing address "}</Text>
             <View> 
             <TextField 
                 fontSize = {12}

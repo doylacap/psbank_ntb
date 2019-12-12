@@ -16,13 +16,7 @@ ntb_gray = '#999999';
 ntb_white = '#FFFFFF';
 ntb_green ='#00C300';
 ntb_light_gray = '#E0E1E1';
-ntb_black = '#000000',
-
-/*DEFAULT FONT*/
-ntb_myriad_bold = 'myriad_pro_bold.ttf';
-ntb_myriad_italic = 'myriad_pro_italic.ttf';
-ntb_myriad_regular = 'myriad_pro_regular.ttf';
-
+ntb_black = '#000000';
 
 export default styles = StyleSheet.create({
   container_new_bins:{
@@ -40,24 +34,24 @@ export default styles = StyleSheet.create({
   },
       Container: {
         justifyContent: 'center',
-        fontFamily: 'Avenir',
+        fontFamily: "MyriadPro-Regular",
         paddingHorizontal:wp('4.7%'),
         display: 'flex',  
       },
       Container_Text: {
-        fontFamily: 'Avenir',
+        fontFamily: "MyriadPro-Regular",
         marginVertical:hp('1%'),
         fontSize: wp('4%'),
         textAlign:'justify'
       },
       Container_Title: {
-        fontFamily: 'Avenir',
+        fontFamily: "MyriadPro-Bold",
         marginVertical:hp('1%'),
         fontSize: wp('5%'),
         fontWeight:'bold',
       },
       Container_Title_Gray: {
-        fontFamily: 'Avenir',
+        fontFamily: "MyriadPro-Bold",
         marginVertical:hp('1%'),
         fontSize: wp('4%'),
         fontWeight:'bold',
@@ -65,7 +59,7 @@ export default styles = StyleSheet.create({
       },
       Container_Title_Gray_Personal: {
         
-        fontFamily: 'Avenir',
+        fontFamily: "MyriadPro-Regular",
         justifyContent: 'flex-start',
         fontSize: wp('4%'),
         fontWeight:'bold',
@@ -90,6 +84,7 @@ export default styles = StyleSheet.create({
       },
 
       ButtonContainer: {
+        width: wp('80%'), 
         height: hp('5.5%'),
         borderRadius: 15,
         marginTop: hp('4%'),
@@ -101,7 +96,7 @@ export default styles = StyleSheet.create({
         fontWeight: 'bold',
         alignSelf: 'center', 
         fontSize: wp('4.1%'),
-        fontFamily: 'Avenir',
+        fontFamily: "MyriadPro-Regular",
         paddingTop: hp('1.5%'),
       },
 
@@ -129,7 +124,7 @@ export default styles = StyleSheet.create({
         textAlign: 'center',
         alignSelf: 'center',
         fontWeight: 'bold',
-        fontFamily: 'Avenir'
+        fontFamily: "MyriadPro-Regular",
       },
       Header_Subtitle:{
         color: ntb_white,
@@ -149,7 +144,7 @@ export default styles = StyleSheet.create({
         textAlign: 'center',
         alignSelf: 'center',
         fontWeight: 'normal',
-        fontFamily: 'Avenir'
+        fontFamily: "MyriadPro-Regular",
       },
 
       Text_Blue_Title: {
@@ -158,7 +153,7 @@ export default styles = StyleSheet.create({
         color : ntb_blue,
         fontWeight: 'bold',
         textAlign: 'left', alignSelf: 'stretch',
-        fontFamily: 'Avenir'
+        fontFamily: "MyriadPro-Regular",
       },
       
       Text_Black: {
@@ -167,7 +162,7 @@ export default styles = StyleSheet.create({
         fontSize: wp('3.8%'),
         color : ntb_black,
         textAlign: 'left', alignSelf: 'stretch',
-        fontFamily: 'Avenir'
+        fontFamily: "MyriadPro-Regular",
       },
       Text_Blue: {
         paddingLeft: wp('3%'),
@@ -175,7 +170,7 @@ export default styles = StyleSheet.create({
         fontSize: wp('3.8%'),
         color : ntb_blue,
         textAlign: 'left', alignSelf: 'stretch',
-        fontFamily: 'Avenir'
+        fontFamily: "MyriadPro-Regular",
       },
       Text_Red: {
         paddingLeft: wp('3%'),
@@ -183,7 +178,7 @@ export default styles = StyleSheet.create({
         fontSize: wp('3.8%'),
         color : ntb_red,
         textAlign: 'left', alignSelf: 'stretch',
-        fontFamily: 'Avenir'
+        fontFamily: "MyriadPro-Regular",
       },
       Modal_Container: {
         width: wp('90%'), 
@@ -192,14 +187,14 @@ export default styles = StyleSheet.create({
         backgroundColor: ntb_white,
         paddingHorizontal:wp('5%'),
         borderRadius:10,
-        fontFamily: 'Avenir'
+        fontFamily: "MyriadPro-Regular",
       },
       Text_Red_Modal_Title: {
         fontSize: wp('5.8%'),
         color : ntb_red,
         fontWeight: 'bold',
         textAlign: 'center', alignSelf: 'stretch',
-        fontFamily: 'Avenir',
+        fontFamily: "MyriadPro-Regular",
       },
       Modal_Title_Horizontal_Line:{
         borderBottomColor:'#E0E1E1',
@@ -207,7 +202,7 @@ export default styles = StyleSheet.create({
         paddingVertical: 5
       },
       Modal_Content: {
-        fontFamily: 'Avenir',
+        fontFamily: "MyriadPro-Regular",
         fontSize: wp('3.7%'),
         textAlign:'justify',
         paddingVertical:wp('2%')
@@ -225,7 +220,7 @@ export default styles = StyleSheet.create({
         fontWeight: 'bold',
         alignSelf: 'center', 
         fontSize: wp('4.1%'),
-        fontFamily: 'Avenir',
+        fontFamily: "MyriadPro-Regular",
         paddingTop: hp('1.5%'),
       },
       Terms_And_Condition_Send_Email_Container:{
@@ -237,7 +232,7 @@ export default styles = StyleSheet.create({
         alignItems: 'center'
       },
       Terms_And_Condition_Send_Email_Text:{
-        fontFamily: 'Avenir',
+        fontFamily: "MyriadPro-Regular",
         fontSize: wp('3.5%'),
         paddingHorizontal: wp('2%'),
       },
@@ -257,7 +252,7 @@ export default styles = StyleSheet.create({
         fontSize: wp('3.9%'),
         color : ntb_blue,
         fontWeight: 'bold',
-        fontFamily: 'Avenir'
+        fontFamily: "MyriadPro-Regular",
       },
       ID_Submission_List_Items: {
         paddingVertical: 15,
@@ -270,7 +265,7 @@ export default styles = StyleSheet.create({
       ID_Submission_List_Text: {
         color: '#4f603c',
         fontSize: wp('3.5%'),
-        fontFamily: 'Avenir'
+        fontFamily: "MyriadPro-Regular",
       },
       ID_Submission_Note_Container: {
         display: 'flex',
@@ -279,7 +274,7 @@ export default styles = StyleSheet.create({
       ID_Submission_Note_Text: {
         color: '#4f603c',
         fontSize: wp('3.5%'),
-        fontFamily: 'Avenir',
+        fontFamily: "MyriadPro-Regular",
         marginTop: hp('1%'),
         marginLeft: wp('3%')
       },

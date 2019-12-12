@@ -18,6 +18,9 @@
 		2D02E4BF1E0B4AB3006451C7 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 13B07FB71A68108700A75B9A /* main.m */; };
 		2DCD954D1E0B4F2C00145EB5 /* OnboardingNTBTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 00E356F21AD99517003FC87E /* OnboardingNTBTests.m */; };
 		4C8F09215C4997739EEE3E46 /* libPods-OnboardingNTB-tvOS.a in Frameworks */ = {isa = PBXBuildFile; fileRef = B072B650BFB14444C5656C7D /* libPods-OnboardingNTB-tvOS.a */; };
+		702F884805DE498CA804B48D /* MyriadPro-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 2AF8E30A5E724D07BCA0CB7F /* MyriadPro-Regular.ttf */; };
+		DCE97AB4F17F46898589D16F /* MyriadPro-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = A4CDE2991DC44A96A79F6298 /* MyriadPro-Bold.ttf */; };
+		E37484065851436592774313 /* MyriadPro-It.ttf in Resources */ = {isa = PBXBuildFile; fileRef = AF6A94F50DF045969C559881 /* MyriadPro-It.ttf */; };
 		E37FAC12CEA787B270BB8E42 /* libPods-OnboardingNTBTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = A3FB99B967CDBFA315E32152 /* libPods-OnboardingNTBTests.a */; };
 		FFC0AA1DFA7248CA87C848E1 /* libPods-OnboardingNTB-tvOSTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 287F3B3580B5894BD80578E2 /* libPods-OnboardingNTB-tvOSTests.a */; };
 /* End PBXBuildFile section */
@@ -53,6 +56,7 @@
 		13B07FB61A68108700A75B9A /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = Info.plist; path = OnboardingNTB/Info.plist; sourceTree = "<group>"; };
 		13B07FB71A68108700A75B9A /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = main.m; path = OnboardingNTB/main.m; sourceTree = "<group>"; };
 		287F3B3580B5894BD80578E2 /* libPods-OnboardingNTB-tvOSTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-OnboardingNTB-tvOSTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		2AF8E30A5E724D07BCA0CB7F /* MyriadPro-Regular.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "MyriadPro-Regular.ttf"; path = "../assets/fonts/MyriadPro-Regular.ttf"; sourceTree = "<group>"; };
 		2D02E47B1E0B4A5D006451C7 /* OnboardingNTB-tvOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "OnboardingNTB-tvOS.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		2D02E4901E0B4A5D006451C7 /* OnboardingNTB-tvOSTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "OnboardingNTB-tvOSTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		37778F6114CE442F5507C031 /* Pods-OnboardingNTB.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-OnboardingNTB.release.xcconfig"; path = "Target Support Files/Pods-OnboardingNTB/Pods-OnboardingNTB.release.xcconfig"; sourceTree = "<group>"; };
@@ -61,6 +65,8 @@
 		740804AA1AB9FFB8E01DC147 /* Pods-OnboardingNTB-tvOS.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-OnboardingNTB-tvOS.release.xcconfig"; path = "Target Support Files/Pods-OnboardingNTB-tvOS/Pods-OnboardingNTB-tvOS.release.xcconfig"; sourceTree = "<group>"; };
 		9CDEDB238436B6F4F0B91F8A /* Pods-OnboardingNTB.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-OnboardingNTB.debug.xcconfig"; path = "Target Support Files/Pods-OnboardingNTB/Pods-OnboardingNTB.debug.xcconfig"; sourceTree = "<group>"; };
 		A3FB99B967CDBFA315E32152 /* libPods-OnboardingNTBTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-OnboardingNTBTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		A4CDE2991DC44A96A79F6298 /* MyriadPro-Bold.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "MyriadPro-Bold.ttf"; path = "../assets/fonts/MyriadPro-Bold.ttf"; sourceTree = "<group>"; };
+		AF6A94F50DF045969C559881 /* MyriadPro-It.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "MyriadPro-It.ttf"; path = "../assets/fonts/MyriadPro-It.ttf"; sourceTree = "<group>"; };
 		B072B650BFB14444C5656C7D /* libPods-OnboardingNTB-tvOS.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-OnboardingNTB-tvOS.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		C1051DD786ADC8E952927122 /* Pods-OnboardingNTBTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-OnboardingNTBTests.release.xcconfig"; path = "Target Support Files/Pods-OnboardingNTBTests/Pods-OnboardingNTBTests.release.xcconfig"; sourceTree = "<group>"; };
 		CDBF021E1BA3B0D5F89CCAF2 /* libPods-OnboardingNTB.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-OnboardingNTB.a"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -165,6 +171,7 @@
 				83CBBA001A601CBA00E9B192 /* Products */,
 				2D16E6871FA4F8E400B85C8A /* Frameworks */,
 				F81096DB8CABE5A7B718DF9F /* Pods */,
+				AB058B4CE5A446D7BCAC697D /* Resources */,
 			);
 			indentWidth = 2;
 			sourceTree = "<group>";
@@ -180,6 +187,16 @@
 				2D02E4901E0B4A5D006451C7 /* OnboardingNTB-tvOSTests.xctest */,
 			);
 			name = Products;
+			sourceTree = "<group>";
+		};
+		AB058B4CE5A446D7BCAC697D /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				A4CDE2991DC44A96A79F6298 /* MyriadPro-Bold.ttf */,
+				AF6A94F50DF045969C559881 /* MyriadPro-It.ttf */,
+				2AF8E30A5E724D07BCA0CB7F /* MyriadPro-Regular.ttf */,
+			);
+			name = Resources;
 			sourceTree = "<group>";
 		};
 		F81096DB8CABE5A7B718DF9F /* Pods */ = {
@@ -342,6 +359,9 @@
 			files = (
 				13B07FBF1A68108700A75B9A /* Images.xcassets in Resources */,
 				13B07FBD1A68108700A75B9A /* LaunchScreen.xib in Resources */,
+				DCE97AB4F17F46898589D16F /* MyriadPro-Bold.ttf in Resources */,
+				E37484065851436592774313 /* MyriadPro-It.ttf in Resources */,
+				702F884805DE498CA804B48D /* MyriadPro-Regular.ttf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
